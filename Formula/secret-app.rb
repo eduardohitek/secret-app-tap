@@ -5,28 +5,28 @@
 class SecretApp < Formula
   desc "Testing a private tap."
   homepage "https://github.com/eduardohitek/secret-app"
-  version "0.1.2"
+  version "0.1.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.2/secret-app_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "ee2ef0640b3cc7d99bfd147bd015ddb1af3ccc69f629b16dcdddfe19e2278c9e"
+      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.3/secret-app_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "67073180564469e862d48539b0621e2cd502b48d0107f20aa477aed61c523c49"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.2/secret-app_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "358e2b5573655a31615aba24481a770e4637310a67c56df5f4ba67ecf9782eb1"
+      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.3/secret-app_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "645e28952aa32f1ff2f5feff70f9df14e32a95c533763561e431923d96b67829"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.2/secret-app_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "adc6799c5469894dc81a9c927be02262417e7cc5cf3268cf9c2fbed207bde2df"
+      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.3/secret-app_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "7c2033deabfed190469430e7e56877f5632b31f7fe7fa498ddf601146366af35"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.2/secret-app_0.1.2_Linux_arm64.tar.gz"
-      sha256 "b39cc3901773b75b615ce4a20ed33353d6aabc22ba670bba7ca2167e2f054a8a"
+      url "https://github.com/eduardohitek/secret-app/releases/download/v0.1.3/secret-app_0.1.3_Linux_arm64.tar.gz"
+      sha256 "f874ce37d0eb1dcfc24635cc86bd0229614a8dd939673f5b7c5c1e9f930ac01f"
     end
   end
 
